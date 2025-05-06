@@ -85,6 +85,8 @@ async function submitForm(formData, count) {
         "Content-Type": "application/x-www-form-urlencoded"
       }
     });
+
+    console.log(response.data)
     console.log(`${getTimestamp()} Form ${count} submitted successfully!`);
   } catch (error) {
     console.error("Error submitting form:", error.response?.status, error.response?.statusText);
